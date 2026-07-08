@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Premium Time Picker</title>
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Remix Icon -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/remixicon@4.6.0/fonts/remixicon.css"
+        rel="stylesheet">
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+        <!-- Time Picker -->
+
+        <div class="time-picker">
+
+            <label class="title">
+
+                Select Time
+
+            </label>
+
+            <!-- Input -->
+
+            <div
+                class="picker-input"
+                id="pickerInput">
+
+                <div class="left">
+
+                    <i class="ri-time-line"></i>
+
+                    <span id="selectedHour">
+                        01
+                    </span>
+
+                    <span class="colon">
+                        :
+                    </span>
+
+                    <span id="selectedMinute">
+                        00
+                    </span>
+
+                </div>
+
+                <span
+                    class="period"
+                    id="selectedPeriod">
+
+                    AM
+
+                </span>
+
+            </div>
+
+            <!-- Dropdown -->
+
+            <div
+                class="dropdown"
+                id="dropdown">
+
+                <!-- Header -->
+
+                <div class="top-bar">
+
+                    <button class="active">
+
+                        <i class="ri-time-line"></i>
+
+                        Time
+
+                    </button>
+
+                    <button id="nowBtn">
+
+                        <i class="ri-sun-line"></i>
+
+                        Now
+
+                    </button>
+
+                </div>
+
+                <!-- Wheels -->
+
+                <div class="wheel-area">
+
+                    <!-- Hour -->
+
+                    <div
+                        class="wheel"
+                        id="hourWheel">
+
+                    </div>
+
+                    <!-- Minute -->
+
+                    <div
+                        class="wheel"
+                        id="minuteWheel">
+
+                    </div>
+
+                    <!-- AM PM -->
+
+                    <div class="period-toggle">
+
+                        <button
+                            class="period-btn active"
+                            data-period="AM">
+
+                            AM
+
+                        </button>
+
+                        <button
+                            class="period-btn"
+                            data-period="PM">
+
+                            PM
+
+                        </button>
+
+                    </div>
+
+                    <!-- Selection -->
+
+                    <div class="selection"></div>
+
+                </div>
+
+                <!-- Footer -->
+
+                <div class="bottom-bar">
+
+                    <button
+                        class="cancel"
+                        id="cancelBtn">
+
+                        Cancel
+
+                    </button>
+
+                    <button
+                        class="done"
+                        id="doneBtn">
+
+                        Done
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
