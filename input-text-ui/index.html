@@ -1,1 +1,23 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Input UI Final Upgrade</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrapper">
+    <div class="premium">
+      <input type="text" id="inp" maxlength="30" placeholder=" " oninput="countChar()">
+      <label>Username</label>
+      <div class="counter"><span id="count">0</span>/30</div>
+    </div>
+  </div>
+  <script>
+    function countChar(){
+      let val = document.getElementById("inp").value.length;
+      document.getElementById("count").innerText = val;
+    }
+  </script>
+</body>
+</html>
