@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #eef2f7;
+}
+.social {
+    display: flex;
+    gap: 22px;
+}
+.social a {
+    width: 68px;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    font-size: 28px;
+    color: #666;
+    border-radius: 20px;
+    background: #eef2f7;
+    box-shadow:
+        -8px -8px 16px #fff,
+        8px 8px 16px #cfd5df;
+    transition: 0.35s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+.social a i {
+    transition: 0.35s;
+}
+.social a:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        inset -6px -6px 12px #fff,
+        inset 6px 6px 12px #cfd5df;
+}
+.social a:hover i {
+    transform: scale(0.88);
+}
+.facebook:hover {
+    color: #1877f2;
+}
+.instagram:hover {
+    color: #e1306c;
+}
+.twitter:hover {
+    color: #111;
+}
+.linkedin:hover {
+    color: #0a66c2;
+}
